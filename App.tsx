@@ -1,8 +1,9 @@
-import { useEffect } from "react";
+// import { useEffect } from "react";
 import { ActivityIndicator } from "react-native";
 import { useFonts } from "expo-font";
 
-import LoginScreen from "./screens/LoginScreen";
+// import LoginScreen from "./screens/LoginScreen";
+import RegistrationScreen from "./screens/RegistrationScreen";
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -16,5 +17,6 @@ export default function App() {
     return <ActivityIndicator size="large" />; // Показуй індикатор завантаження
   }
 
-  return <LoginScreen />;
+  // return <LoginScreen />;
+  return <RegistrationScreen />;
 }
